@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/AFISHA_Project.iml" filepath="$PROJECT_DIR$/.idea/AFISHA_Project.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/django_rest_Project.iml" filepath="$PROJECT_DIR$/.idea/django_rest_Project.iml" />
+>>>>>>> c7660bb1090a8fef758b4222cddd40b8010c1eaa
     </modules>
   </component>
 </project>
