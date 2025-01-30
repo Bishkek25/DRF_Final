@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import  Movie, Review, Director
 
 class DirectorSerializer(serializers.ModelSerializer):
-     # name = serializers.CharField(max_length=100)
+     name = serializers.CharField(max_length=100)
      movie_count = serializers.SerializerMethodField()
 
      class Meta:
@@ -36,5 +36,10 @@ class MovieSerializer(serializers.ModelSerializer):
              average = sum_reviews / len(reviews)
              return average
          return None
-#
-# class MovieValidirySerializer(MovieSerializer):
+
+class MovieValidirySerializer(MovieSerializer):
+    title = serializers.CharField(max_length=100)
+    description = serializers.CharField()
+    duration = serializers.IntegerField()
+    director = serializers. IntegerField()
+
