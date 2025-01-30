@@ -19,6 +19,11 @@ class ReviewSerializer(serializers.ModelSerializer):
         model = Review
         fields = ('text', 'movie', 'stars')
 
+class ReviewValiditySerializer(serializers.ModelSerializer):
+    text = serializers.CharField()
+    movie = serializers.IntegerField()
+    stars = serializers.IntegerField(min_value=1, max_value=5)
+
 
 class MovieSerializer(serializers.ModelSerializer):
      director = DirectorSerializer()
